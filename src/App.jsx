@@ -30,15 +30,15 @@ function App() {
   }, []);
   console.log(repos);
 
-  const GITHUB_TOKEN =
-    "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";
+  // const GITHUB_TOKEN =
+  //   "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";
 
-  const axiosInstance = axios.create({
-    baseURL: "https://api.github.com",
-    headers: {
-      Authorization: `token ${GITHUB_TOKEN}`,
-    },
-  });
+  // const axiosInstance = axios.create({
+  //   baseURL: "https://api.github.com",
+  //   headers: {
+  //     Authorization: `token ${GITHUB_TOKEN}`,
+  //   },
+  // });
 
   const indexOfLastRepos = currentPage * reposPerPage;
   const indexOfFirstRepos = indexOfLastRepos - reposPerPage;
