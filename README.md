@@ -1,6 +1,6 @@
 # React + Vite
 
-This is a vite + react project that to aims to take advantage of both vite and react framework libraries to fetch a GitHub repository.
+This is a vite + react project that to aim to take advantage of both vite and react framework libraries to fetch a GitHub repository.
 
 # GitHub Repo Fetcher - React App
 
