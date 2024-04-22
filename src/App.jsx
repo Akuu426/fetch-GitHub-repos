@@ -5,7 +5,7 @@ import Repos from "./components/Repos";
 import RepoDetails from "./components/RepoDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./components/NotFound";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -61,13 +61,12 @@ function App() {
   return (
     <>
       <div>
-        {/* <NavBar setOpen={setOpen}/> */}
         <Router>
           <Routes>
             <Route path="/" element={<Repos repos={currentRepos} />}></Route>
             <Route path="/repo/:id" element={<RepoDetails />} />
 
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </div>
